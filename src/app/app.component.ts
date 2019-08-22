@@ -19,9 +19,4 @@ export class AppComponent implements OnInit{
     ngOnInit(): void {
       this.personas = this.personaService.personas;
     }
-
-  //Recibimos el evento emitido ($event es igual a el parámetro agregado en el evento emitido)
-  /* onPersonaAgregada(persona:Persona){
-    this.personaService.agregarPersona(persona);
-  } */
 }
