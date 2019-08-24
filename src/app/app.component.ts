@@ -12,11 +12,11 @@ export class AppComponent implements OnInit{
 
 
   titulo = 'Listado de Personas';
-  personas: Persona[] = [];
-  constructor(private logginService:LogginService,
-    private personaService: PersonasService){}
+  
+  constructor(){}
 
     ngOnInit(): void {
-      this.personas = this.personaService.personas;
+     
     }
+  
 }
