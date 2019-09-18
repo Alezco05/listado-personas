@@ -13,7 +13,7 @@ html {
   }
   
   .box {
-    max-width: 400px;
+    max-width: 600px;
     margin: 50px auto;
     background: white;
     border-radius: 5px;
@@ -29,6 +29,7 @@ html {
     min-height: 70px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     border-bottom: 1px solid #F1F1F1;
   }
   
@@ -78,7 +79,7 @@ html {
     border-width: 0;
   }
   
-  input[type="text"] {
+  input{
     text-align: center;
     height: 60px;
     top: 10px;
@@ -86,10 +87,10 @@ html {
     background: transparent;
     font-size: 20px;
     font-weight: 200;
-    width: 40%;
+    width: 100%;
   }
   
-  input[type="text"]:focus {
+  input:focus {
     outline: none;
     box-shadow: inset 0 -3px 0 0 #3F51B5;
   }
@@ -97,5 +98,9 @@ html {
   ::placeholder {
     color: grey;
     opacity: 1;
+  }
+
+  .centrado{
+    text-align: center;
   }
   

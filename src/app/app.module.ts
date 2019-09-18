@@ -13,13 +13,17 @@ import { AppRoutingModule } from './app-routing.module';
 import {PersonasComponent} from './personas/personas.component';
 import { ErrorComponent } from './error/error.component';
 import {HttpClientModule} from '@angular/common/http';
+import { LoginComponent } from './login/login.component';
+import { LoginService } from './login/login.service';
+import { LoginGuardianService } from './login/login-guardian.service';
 @NgModule({
   declarations: [
     AppComponent,
     FormularioComponent,
     PersonaComponent,
     PersonasComponent,
-    ErrorComponent
+    ErrorComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +31,7 @@ import {HttpClientModule} from '@angular/common/http';
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [LogginService,PersonasService,DataServices],
+  providers: [LogginService,PersonasService,DataServices,LoginService,LoginGuardianService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
